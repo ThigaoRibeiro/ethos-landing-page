@@ -1,10 +1,10 @@
-# ETHOS — O Guia da Ciência Animal
+# Ethos - Seu Guia de Ciência Animal
 
-Landing page institucional do projeto ETHOS, uma plataforma educativa e de apoio sobre ciência de animais de laboratório, manejo, ética, bem-estar animal e legislação brasileira.
+Landing page institucional do projeto Ethos, uma plataforma educativa e de apoio sobre ciência de animais de laboratório, manejo, ética, bem-estar animal e legislação brasileira.
 
 ## Sobre
 
-O ETHOS é um guia interativo que conecta estudantes, pesquisadores e profissionais a orientações baseadas em referências brasileiras sobre ciência animal. Nesta primeira fase, a landing page apresenta o projeto e direciona o usuário ao ambiente de consulta no NotebookLM.
+O Ethos é um guia interativo que conecta estudantes, pesquisadores e profissionais a orientações baseadas em referências brasileiras sobre ciência animal. Nesta primeira fase, a landing page apresenta o projeto e direciona o usuário ao ambiente de consulta no NotebookLM.
 
 ## Estrutura do Projeto
 
