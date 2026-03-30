@@ -53,3 +53,7 @@ Criar uma plataforma digital educativa chamada **Ethos - Seu Guia de Ciência An
 3. Conteúdo informativo e educativo — **não substitui** avaliação formal institucional, ética, jurídica ou regulatória
 4. Sem backend, banco de dados ou autenticação
 5. Projeto estático (HTML/CSS/JS puro)
+
+## Diretrizes de Desenvolvimento
+
+- **Mensagens de Commit**: Todas as mensagens de commit, sejam elas criadas manualmente ou durante o auxílio por IA, devem ser exclusivamente em **Português do Brasil**. (Exemplo: `feat: ajusta layout da página inicial`).

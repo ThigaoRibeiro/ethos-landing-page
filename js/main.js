@@ -7,7 +7,7 @@
 
   // ---- NotebookLM URL ----
   // Replace this URL with the actual NotebookLM environment link
-  const NOTEBOOK_LM_URL = '#';
+  const NOTEBOOK_LM_URL = 'https://notebooklm.google.com/notebook/4d5af2b3-3346-4ac2-91d5-6325378808c2';
 
   // ---- DOM Elements ----
   const header = document.getElementById('header');
