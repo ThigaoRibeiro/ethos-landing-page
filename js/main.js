@@ -64,30 +64,30 @@
 
   // ---- Set CTA link URLs ----
   ctaLinks.forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      if (NOTEBOOK_LM_URL === '#') {
-        e.preventDefault();
-        showNotice('O link para o ambiente de consulta será configurado em breve.');
-        return;
-      }
+    if (NOTEBOOK_LM_URL !== '#') {
       link.href = NOTEBOOK_LM_URL;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
-    });
+    } else {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        showNotice('O link para o ambiente de consulta será configurado em breve.');
+      });
+    }
   });
 
   // ---- Example items click ----
   exampleLinks.forEach(function (item) {
-    item.addEventListener('click', function (e) {
-      if (NOTEBOOK_LM_URL === '#') {
-        e.preventDefault();
-        showNotice('O link para o ambiente de consulta será configurado em breve.');
-        return;
-      }
+    if (NOTEBOOK_LM_URL !== '#') {
       item.href = NOTEBOOK_LM_URL;
       item.target = '_blank';
       item.rel = 'noopener noreferrer';
-    });
+    } else {
+      item.addEventListener('click', function (e) {
+        e.preventDefault();
+        showNotice('O link para o ambiente de consulta será configurado em breve.');
+      });
+    }
   });
 
   // ---- Simple notice toast ----
@@ -173,18 +173,16 @@
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
       const href = this.getAttribute('href');
-      if (href === '#') return; // Skip placeholder links
+      const target = document.querySelector(href);
+      if (!href || href === '#' || !target) return;
 
       e.preventDefault();
-      const target = document.querySelector(href);
-      if (target) {
-        const headerHeight = document.getElementById('header').offsetHeight;
-        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-        window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth',
-        });
-      }
+      const headerHeight = document.getElementById('header').offsetHeight;
+      const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth',
+      });
     });
   });
 })();
