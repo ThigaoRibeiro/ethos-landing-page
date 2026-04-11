@@ -1,0 +1,24 @@
+{
+  "name": "ethos-backend",
+  "version": "2.0.0",
+  "description": "Backend do Ethos - Guia de Ciência Animal (Fase 2: Chat integrado com Gemini API)",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "googleapis": "^140.0.1",
+    "helmet": "^8.0.0",
+    "pdf-parse": "^1.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
